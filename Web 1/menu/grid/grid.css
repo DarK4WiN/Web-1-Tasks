@@ -1,0 +1,42 @@
+.container{
+    border: 1px solid grey;
+    display: grid;
+    /* grid-template-columns: 200px auto 200px;
+    grid-template-rows: 100px auto 50px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 4fr;
+    grid-gap: 5px;
+    grid-template-areas: "a a a a a a"
+                         "b d d d d c"
+                         "b g g f f c"
+                         "e e e e e e";
+}
+
+[class^="Block-"]{
+    border: 1px dashed green;
+    border-radius: 10px;
+    background-color: lightgreen;
+}
+.Block-1{
+    grid-area: a;
+}
+.Block-2{
+    grid-area: b;
+}
+.Block-3{
+    grid-area: d;
+}
+.Block-4{
+    grid-area: c;
+}
+.Block-5{
+    grid-area: e;
+}
+.Block-6{
+    grid-area: g;
+}
+.Block-7{
+    grid-area: f;
+}
+.content{
+    min-height: 500px;
+}

@@ -1,0 +1,38 @@
+.container{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    
+}
+.col-1{
+    margin: 5px;
+    padding: 5px;
+    width: 32%;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+a{
+    display: block;
+    background-color: lightgreen;
+}
+.clear{
+    clear: both;
+}
+@media only screen and (max-width: 600px){
+    .col-1{
+        width: 100%;
+        float: left;
+        border: 1px solid black;
+    }
+}
+.readmore {
+    border: 1px dashed black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightgrey;
+    text-align: center;
+}
